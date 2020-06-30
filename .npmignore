@@ -4,3 +4,5 @@ src
 tsconfig.json
 # Noone wants this
 *.tgz
+# Only used for testing during development
+demo
