@@ -6,7 +6,11 @@
 	"main": "dist/index.js",
 	"typings": "typings/index.d.ts",
 	"license": "MIT",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
 	"scripts": {
+		"prepack": "tsc",
 		"start": "concurrently \"npm run tsc-watch\" \"npm run start-demo\"",
 		"tsc-watch": "tsc --watch",
 		"start-demo": "cd demo && npm start"
