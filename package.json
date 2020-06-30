@@ -5,5 +5,14 @@
 	"author": "Silic1",
 	"main": "dist/index.js",
 	"typings": "typings/index.d.ts",
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.9.41",
+		"@types/react-dom": "^16.9.8",
+		"typescript": "^3.9.5"
+	},
+	"dependencies": {
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
+	}
 }

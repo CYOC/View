@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"downlevelIteration": true,
+		"declaration": true,
+		"declarationDir": "typings",
+		"jsx": "react",
+		"lib": [
+			"ES6",
+			"DOM"
+		],
+		"moduleResolution": "node",
+		"outDir": "dist",
+		"strict": true,
+		"target": "ES6"
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx"
+	]
+}
