@@ -6,9 +6,15 @@
 	"main": "dist/index.js",
 	"typings": "typings/index.d.ts",
 	"license": "MIT",
+	"scripts": {
+		"start": "concurrently \"npm run tsc-watch\" \"npm run start-demo\"",
+		"tsc-watch": "tsc --watch",
+		"start-demo": "cd demo && npm start"
+	},
 	"devDependencies": {
 		"@types/react": "^16.9.41",
 		"@types/react-dom": "^16.9.8",
+		"concurrently": "^5.2.0",
 		"typescript": "^3.9.5"
 	},
 	"dependencies": {
