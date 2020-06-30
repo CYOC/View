@@ -9,7 +9,7 @@
 			"DOM"
 		],
 		"moduleResolution": "node",
-		"outDir": "dist",
+		"outDir": "lib",
 		"strict": true,
 		"target": "ES6"
 	},
