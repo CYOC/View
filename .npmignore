@@ -1,0 +1,6 @@
+# No need to export the source code
+src
+# Only useful together with the source code
+tsconfig.json
+# Noone wants this
+*.tgz

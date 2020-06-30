@@ -1,0 +1,9 @@
+{
+	"name": "@cyoc/view",
+	"version": "0.0.1",
+	"description": "Lightweight, reusable, component, for viewing CYOC projects",
+	"author": "Silic1",
+	"main": "dist/index.js",
+	"typings": "typings/index.d.ts",
+	"license": "MIT"
+}
