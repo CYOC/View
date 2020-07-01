@@ -1,24 +1,27 @@
-import { Component, ReactNode } from "react";
+import { Component, ReactNode, CSSProperties } from "react";
 import * as React from "react";
-import { Part } from "@cyoc/model";
+import { Project } from "@cyoc/model";
 import { UIPart } from "./UIPart";
+import { cssBackgroundProps } from "./utility";
 
-export interface CYOCProperties {
-	style?: React.CSSProperties;
-	name: string;
-	parts: Array<Part>;
-}
 interface CYOCState {
 }
 
-export class CYOC extends Component<CYOCProperties, CYOCState> {
-	public constructor(props: Readonly<CYOCProperties>) {
+export class CYOC extends Component<Project, CYOCState> {
+	public constructor(props: Readonly<Project>) {
 		super(props);
 	}
 
 	public render(): ReactNode {
+		const topStyle: CSSProperties = {
+			width: `${this.props.width}px`
+		};
+		if (this.props.background != null) {
+			Object.assign(topStyle, cssBackgroundProps(this.props.background));
+		}
+
 		return (
-			<div style={this.props.style}>
+			<div style={topStyle}>
 				{ this.props.parts.map(p => <UIPart key={p.name} {...p}/>) }
 			</div>
 		);

@@ -2,7 +2,6 @@ import { Project } from "@cyoc/model";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { CYOC } from "./CYOC";
-import { cssBackgroundProps } from "./utility";
 
 export class CYOCElement {
 	private element: Element;
@@ -40,10 +39,7 @@ export class CYOCElement {
 	 */
 	public render(): void {
 		ReactDOM.render(
-			<CYOC
-				style={{ width: `${this.project.width}px`, ...cssBackgroundProps(this.project.background) }}
-				name={this.project.name}
-				parts={this.project.parts}/>,
+			<CYOC {...this.project}/>,
 			this.element
 		);
 	}
