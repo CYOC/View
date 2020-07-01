@@ -1,6 +1,7 @@
 import { Component, ReactNode } from "react";
 import * as React from "react";
 import { Part } from "@cyoc/model";
+import { UIPart } from "./UIPart";
 
 export interface CYOCProperties {
 	style?: React.CSSProperties;
@@ -18,7 +19,7 @@ export class CYOC extends Component<CYOCProperties, CYOCState> {
 	public render(): ReactNode {
 		return (
 			<div style={this.props.style}>
-				<h1>{this.props.name}</h1>
+				{ this.props.parts.map(p => <UIPart key={p.name} {...p}/>) }
 			</div>
 		);
 	}
