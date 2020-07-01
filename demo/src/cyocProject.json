@@ -1,0 +1,17 @@
+{
+	"$schema": "../../node_modules/@cyoc/model/schema.json",
+	"name": "CYOC View demo",
+	"width": 500,
+	"background": "#bada55",
+	"parts": [
+		{
+			"name": "Page 1",
+			"background": "#d95555",
+			"sections": []
+		},
+		{
+			"name": "Page 2",
+			"sections": []
+		}
+	]
+}

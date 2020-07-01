@@ -12,15 +12,17 @@ function updateWidth(dir) {
 	return w;
 }
 
+const fromFile = require("./cyocProject.json");
+
 window.addEventListener(
 	"load",
 	() => {
-		const cyocElement = CYOCView.Attach("target", { name: "CYOC View demo", width: updateWidth(0), background: printColor(0), parts: [] });
+		const cyocElement = CYOCView.Attach("target", { ...fromFile, width: updateWidth(0), background: printColor(0) });
 		document.addEventListener(
 			"wheel",
 			e => {
 				const dir = -Math.sign(e.deltaY);
-				cyocElement.updateProject({ name: "CYOC View demo", width: updateWidth(dir), background: printColor(dir), parts: [] });
+				cyocElement.updateProject({ ...fromFile, width: updateWidth(dir), background: printColor(dir) });
 			},
 			false
 		);
