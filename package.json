@@ -1,6 +1,6 @@
 {
 	"name": "@cyoc/view",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Lightweight, reusable, component, for viewing CYOC projects",
 	"author": "Silic1",
 	"main": "lib/index.js",

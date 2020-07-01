@@ -7,11 +7,38 @@
 		{
 			"name": "Page 1",
 			"background": "#d95555",
-			"sections": []
+			"sections": [
+				{
+					"name": "Welcome",
+					"border": {
+						"color": "#000000",
+						"thickness": 5,
+						"rounding": 25
+					},
+					"rows": []
+				},
+				{
+					"name": "First choice",
+					"rows": []
+				}
+			]
 		},
 		{
 			"name": "Page 2",
-			"sections": []
+			"sections": [
+				{
+					"name": "A choice",
+					"border": {
+						"color": "#1ce",
+						"thickness": 5,
+						"presence": {
+							"top": true,
+							"bottom": true
+						}
+					},
+					"rows": []
+				}
+			]
 		}
 	]
 }
