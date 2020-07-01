@@ -1,6 +1,6 @@
 {
 	"name": "@cyoc/view",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Lightweight, reusable, component, for viewing CYOC projects",
 	"author": "Silic1",
 	"main": "lib/index.js",
@@ -22,6 +22,7 @@
 		"typescript": "^3.9.5"
 	},
 	"dependencies": {
+		"@cyoc/model": "0.0.4",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1"
 	}
