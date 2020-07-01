@@ -2,6 +2,7 @@ import { Component, ReactNode, CSSProperties } from "react";
 import * as React from "react";
 import { Part } from "@cyoc/model";
 import { cssBackgroundProps } from "./utility";
+import { UISection } from "./UISection";
 
 interface UIPartState {
 }
@@ -19,7 +20,7 @@ export class UIPart extends Component<Part, UIPartState> {
 
 		return (
 			<div style={topStyle}>
-				<h2>{this.props.name}</h2>
+				{ this.props.sections.map(p => <UISection key={p.name} {...p}/>) }
 			</div>
 		);
 	}
