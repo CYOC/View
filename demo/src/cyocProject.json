@@ -36,7 +36,13 @@
 				},
 				{
 					"name": "First choice",
-					"rows": []
+					"rows": [
+						{
+							"type": "ImageRow",
+							"name": "Image",
+							"src": "https://placeimg.com/450/400/animals"
+						}
+					]
 				}
 			]
 		},
