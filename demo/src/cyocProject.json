@@ -25,7 +25,8 @@
 						{
 							"type": "DescriptionRow",
 							"name": "Intro",
-							"text": "This is a demonstration of the viewer for the CYOAs created with the CYOC app.",
+							"heading": "This is a description heading",
+							"text": "This is a demonstration of the viewer for the CYOAs created with the CYOC app.\nAnd it has multiple lines.",
 							"image": {
 								"position": "left",
 								"src": "87Pnm0M"

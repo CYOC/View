@@ -1,11 +1,13 @@
 import * as React from "react";
-import { Row, isHeadingRow } from "@cyoc/model";
+import { Row, isHeadingRow, isDescriptionRow } from "@cyoc/model";
 import { Heading } from "./Heading";
+import { Description } from "./Description";
 
 export * from "./Heading";
 
 const contentMap: Array<(row: Row) => JSX.Element | null> = [
-	r => isHeadingRow(r) ? <Heading {...r}/> : null
+	r => isHeadingRow(r) ? <Heading {...r}/> : null,
+	r => isDescriptionRow(r) ? <Description {...r}/> : null
 ];
 
 export function GetContent(row: Row): JSX.Element {
