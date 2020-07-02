@@ -2,6 +2,7 @@ import { Component, ReactNode, CSSProperties } from "react";
 import * as React from "react";
 import { Section } from "@cyoc/model";
 import { cssBorderProps } from "./utility";
+import { UIRow } from "./UIRow";
 
 interface UISectionState {
 }
@@ -19,7 +20,7 @@ export class UISection extends Component<Section, UISectionState> {
 
 		return (
 			<div style={topStyle}>
-				<h3>{this.props.name}</h3>
+				{ this.props.rows.map(p => <UIRow key={p.name} {...p}/>) }
 			</div>
 		);
 	}

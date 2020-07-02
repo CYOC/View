@@ -15,7 +15,23 @@
 						"thickness": 5,
 						"rounding": 25
 					},
-					"rows": []
+					"rows": [
+						{
+							"type": "HeadingRow",
+							"name": "Title",
+							"level": 0,
+							"text": "CYOC View demo"
+						},
+						{
+							"type": "DescriptionRow",
+							"name": "Intro",
+							"text": "This is a demonstration of the viewer for the CYOAs created with the CYOC app.",
+							"image": {
+								"position": "left",
+								"src": "87Pnm0M"
+							}
+						}
+					]
 				},
 				{
 					"name": "First choice",
