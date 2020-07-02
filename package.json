@@ -19,10 +19,10 @@
 		"@types/react": "^16.9.41",
 		"@types/react-dom": "^16.9.8",
 		"concurrently": "^5.2.0",
-		"typescript": "^3.9.5"
+		"typescript": "^3.9.6"
 	},
 	"dependencies": {
-		"@cyoc/model": "0.0.4",
+		"@cyoc/model": "0.0.6",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1"
 	}
