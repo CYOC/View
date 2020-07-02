@@ -4,8 +4,6 @@ import { Heading } from "./Heading";
 import { Description } from "./Description";
 import { Image } from "./Image";
 
-export * from "./Heading";
-
 const contentMap: Array<(row: Row) => JSX.Element | null> = [
 	r => isHeadingRow(r) ? <Heading {...r}/> : null,
 	r => isDescriptionRow(r) ? <Description {...r}/> : null,
