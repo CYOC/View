@@ -14,7 +14,8 @@ export class Choices extends Component<ChoiceRow, ChoicesState> {
 		alignItems: "flex-start"
 	};
 	private static readonly choiceStyle: Readonly<CSSProperties> = {
-		flexGrow: 1
+		flexGrow: 1,
+		flexBasis: 0
 	};
 
 	public constructor(props: Readonly<ChoiceRow>) {
