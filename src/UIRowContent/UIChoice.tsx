@@ -13,10 +13,20 @@ export class UIChoice extends Component<UIChoiceProperties, UIChoiceState> {
 		super(props);
 	}
 
+	private description(): Array<JSX.Element> {
+		if (this.props.description != null) {
+			return this.props.description.split("\n").map(d => <p>{d}</p>);
+		}
+		else {
+			return new Array<JSX.Element>();
+		}
+	}
+
 	public render(): ReactNode {
 		return (
 			<div style={this.props.style}>
 				<h3>{this.props.title}</h3>
+				{this.description()}
 			</div>
 		);
 	}
