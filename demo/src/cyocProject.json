@@ -41,6 +41,39 @@
 							"type": "ImageRow",
 							"name": "Image",
 							"src": "https://placeimg.com/450/400/animals"
+						},
+						{
+							"type": "ChoiceRow",
+							"name": "Choices",
+							"choices": [
+								{
+									"name": "1",
+									"title": "1"
+								},
+								{
+									"name": "2",
+									"title": "2",
+									"description": "The second choice"
+								},
+								{
+									"name": "3",
+									"title": "3",
+									"image": "https://placeimg.com/175/250/animals"
+								},
+								{
+									"name": "4",
+									"title": "4",
+									"border": {
+										"thickness": 2.5,
+										"color": "#000000"
+									}
+								},
+								{
+									"name": "5",
+									"title": "5",
+									"background": "#00ffff"
+								}
+							]
 						}
 					]
 				}
