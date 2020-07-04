@@ -15,7 +15,9 @@ export class UIChoice extends Component<UIChoiceProperties, UIChoiceState> {
 
 	public render(): ReactNode {
 		return (
-			<p style={this.props.style}>{this.props.name}</p>
+			<div style={this.props.style}>
+				<h3>{this.props.title}</h3>
+			</div>
 		);
 	}
 }
