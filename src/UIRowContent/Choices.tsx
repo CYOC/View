@@ -1,6 +1,7 @@
 import { Component, ReactNode } from "react";
 import * as React from "react";
 import { ChoiceRow } from "@cyoc/model";
+import { UIChoice } from "./UIChoice";
 
 interface ChoicesState {
 }
@@ -11,10 +12,6 @@ export class Choices extends Component<ChoiceRow, ChoicesState> {
 	}
 
 	public render(): ReactNode {
-		return (
-			<>
-				<p>{this.props.name}</p>
-			</>
-		);
+		return this.props.choices.map(p => <UIChoice key={p.name} {...p}/>);
 	}
 }
