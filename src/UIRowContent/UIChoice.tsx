@@ -1,7 +1,7 @@
 import { Component, ReactNode, CSSProperties } from "react";
 import * as React from "react";
 import { Choice } from "@cyoc/model";
-import { imageURI, cssBorderProps, cssBackgroundProps } from "../utility";
+import { imageURI, cssBorderProps, cssBackgroundProps, stringHash } from "../utility";
 
 type UIChoiceProperties = Choice & {
 	style?: CSSProperties
@@ -25,7 +25,7 @@ export class UIChoice extends Component<UIChoiceProperties, UIChoiceState> {
 
 	private description(): Array<JSX.Element> {
 		if (this.props.description != null) {
-			return this.props.description.split("\n").map(d => <p>{d}</p>);
+			return this.props.description.split("\n").map(d => <p key={stringHash(d)}>{d}</p>);
 		}
 		else {
 			return new Array<JSX.Element>();
