@@ -1,7 +1,7 @@
 import { Component, ReactNode, CSSProperties } from "react";
 import * as React from "react";
 import { Choice } from "@cyoc/model";
-import { imageURI, cssBorderProps } from "../utility";
+import { imageURI, cssBorderProps, cssBackgroundProps } from "../utility";
 
 type UIChoiceProperties = Choice & {
 	style?: CSSProperties
@@ -38,9 +38,16 @@ export class UIChoice extends Component<UIChoiceProperties, UIChoiceState> {
 		}
 	}
 
+	private assignBackground(style: CSSProperties): void {
+		if (this.props.background != null) {
+			Object.assign(style, cssBackgroundProps(this.props.background));
+		}
+	}
+
 	public render(): ReactNode {
 		const topStyle: CSSProperties = {...this.props.style};
 		this.assignBorder(topStyle);
+		this.assignBackground(topStyle);
 
 		return (
 			<div style={topStyle}>
